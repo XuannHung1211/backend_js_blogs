@@ -122,7 +122,7 @@ export const signOut = async (req , res) => {
 
         }
         
-        return res.sendStatus(204)
+        return res.sendStatus(204).json({message:"da dang xuat"})
 
     } catch (error) {
         console.log("Lỗi xóa refreshToken" , error)
